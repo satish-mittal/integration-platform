@@ -11,9 +11,13 @@ public class AppointmentDetails {
 
     public int scheduledEndTimeMin;
 
-    public PatientDetails localPatientInfo;
-
-    public long localAppointmentId;
+    public PatientDetails patientDetails;
 
     public AppointmentStatus status;
+    
+    public long localAppointmentId;
+    
+    public long practoAppointmentId;
+    
+    public PaymentDetails paymentDetails;
 }
