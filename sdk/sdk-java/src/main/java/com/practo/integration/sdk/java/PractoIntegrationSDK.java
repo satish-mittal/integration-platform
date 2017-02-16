@@ -1,16 +1,12 @@
 package com.practo.integration.sdk.java;
 
-import com.practo.integration.common.AppointmentDetails;
-import com.practo.integration.common.DoctorDetails;
-import com.practo.integration.common.PatientDetails;
-
 public interface PractoIntegrationSDK {
 
     /**
-     * @param applicationID: Application ID issued by Practo that uniquely identifies the application 
-     * @param applicationSecret: Application Secret key issued by Practo
-     * @param establishmentKey: Establishment specific unique key issued by Practo
-     * @throws SDKException: thrown if connection to Practo Platform fails
+     * @param applicationID Application ID issued by Practo that uniquely identifies the application 
+     * @param applicationSecret Application Secret key issued by Practo
+     * @param establishmentKey Establishment specific unique key issued by Practo
+     * @throws SDKException thrown if connection to Practo Platform fails
      */
     public void connectEstablishmentToPracto(String applicationID, String applicationSecret,
             String establishmentKey) throws SDKException;
@@ -19,7 +15,7 @@ public interface PractoIntegrationSDK {
      * @param applicationID
      * @param applicationSecret
      * @param establishmentKey
-     * @param doctorParams
+     * @param doctorParams details of HIMS doctor to be added
      * @throws SDKException
      */
     public void addDoctorDetails(String applicationID, String applicationSecret,

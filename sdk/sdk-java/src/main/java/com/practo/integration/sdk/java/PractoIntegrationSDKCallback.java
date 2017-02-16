@@ -1,9 +1,5 @@
 package com.practo.integration.sdk.java;
 
-import com.practo.integration.common.AppointmentDetails;
-import com.practo.integration.common.CalendarSyncPaginatedResponse;
-import com.practo.integration.common.DoctorStatus;
-
 public interface PractoIntegrationSDKCallback {
 
     /**
@@ -11,7 +7,7 @@ public interface PractoIntegrationSDKCallback {
      * @param doctorStatus
      * @throws SDKException
      */
-    public void handleDoctorStatusChange(long localDoctorId, DoctorStatus doctorStatus) throws SDKException;
+    public void handleDoctorStatusChange(String localDoctorId, DoctorStatus doctorStatus) throws SDKException;
 
     /**
      * @param localDoctorId

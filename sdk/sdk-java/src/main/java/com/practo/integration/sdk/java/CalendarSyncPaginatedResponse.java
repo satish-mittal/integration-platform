@@ -1,4 +1,4 @@
-package com.practo.integration.common;
+package com.practo.integration.sdk.java;
 
 import java.util.List;
 
